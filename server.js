@@ -65,9 +65,6 @@ function cached_Endpoint(req, res) {
     }
     return false;
 }
-function API_Endpoint(req, res) {
-    return require('./router').dispatch_API_EndPoint(req, res);
-}
 function Static_Ressource_Request(req, res) {
     const staticRessourcesServer = require('./staticRessourcesServer.js');
     return staticRessourcesServer.sendRequestedFile(req, res);
